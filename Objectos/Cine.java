@@ -2,9 +2,11 @@ package Objectos;
 
 public class Cine {
 
-	private Pelicula proyecta;
-	private double precioEntrada;
+	// Atributos
+	private Pelicula proyecta; // pelicula que se proyecta en el cine actualmente
+	private double precioEntrada; // precio de la entrada del cine
 	
+	// Constructores
 	public Cine() {
 		this(new Pelicula(), 10);
 	}
@@ -13,7 +15,7 @@ public class Cine {
 		this.proyecta = peli;
 		this.precioEntrada = precio;
 	}
-
+	// Getters & setters
 	public Pelicula getProyecta() {
 		return proyecta;
 	}

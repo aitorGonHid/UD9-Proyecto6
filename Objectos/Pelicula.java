@@ -8,6 +8,21 @@ public class Pelicula {
 	private int edadMinima;
 	private String director;
 	
+	// Constructores
+	public Pelicula () {
+		this.titulo = "";
+		this.edadMinima = 0;
+		this.duracion = 0;
+		this.director = "";
+	}
+	public Pelicula(String titulo, int duracion, int edadMinima, String director) {
+		super();
+		this.titulo = titulo;
+		this.duracion = duracion;
+		this.edadMinima = edadMinima;
+		this.director = director;
+	}
+	
 	// Getters y setters
 	public String getTitulo() {
 		return titulo;
@@ -39,21 +54,4 @@ public class Pelicula {
 		return "Pelicula [titulo=" + titulo + ", duracion=" + duracion + ", edadMinima=" + edadMinima + ", director="
 				+ director + "]";
 	}
-	
-	// Constructores
-	public Pelicula () {
-		this.titulo = "";
-		this.edadMinima = 0;
-		this.duracion = 0;
-		this.director = "";
-	}
-	public Pelicula(String titulo, int duracion, int edadMinima, String director) {
-		super();
-		this.titulo = titulo;
-		this.duracion = duracion;
-		this.edadMinima = edadMinima;
-		this.director = director;
-	}
-	
-	
 }
